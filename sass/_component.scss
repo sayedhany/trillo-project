@@ -1,0 +1,65 @@
+.logo {
+  height: 3.25rem;
+  margin-left: 3rem;
+}
+// sayed
+.search {
+  flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__input {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: var(--color-grey-light-2);
+    border: none;
+    color: inherit;
+    padding: 0.7rem 2rem;
+    border-radius: 100px;
+    width: 90%;
+    margin-right: -3.25rem;
+    transition: all 0.2s;
+
+    &::-webkit-input-placeholder {
+      font-weight: 100;
+      color: var(--color-grey-light-4);
+    }
+    &:focus {
+      outline: none;
+      width: 100%;
+      background-color: var(--color-grey-light-3);
+    }
+  }
+  &__input:focus + &__button {
+    background-color: var(--color-grey-light-3);
+  }
+  &__button {
+    border: none;
+    background-color: var(--color-grey-light-2);
+  }
+  &__button:focus {
+    outline: none;
+  }
+  &__button:active {
+    transform: translateY(2px);
+  }
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: var(--color-grey-dark-3);
+  }
+}
+
+.user-nav {
+  background-color: greenyellow;
+  display: flex;
+
+  &__icon {
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+  &__user-photo {
+    height: 3.75rem;
+    border-radius: 50%;
+  }
+}
